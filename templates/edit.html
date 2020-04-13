@@ -1,0 +1,42 @@
+{% extends "base.html"%} {% block head%}
+<title>eidt posts</title>
+{% endblock%} {% block body%}
+<hr />
+<hr />
+<h2>Edit the BLOG</h2>
+<form action="/posts/edit/{{post.id}}" method="POST">
+  Title:
+  <input
+    class="form-control"
+    type="text"
+    placeholder="{{post.title}}"
+    aria-label="Search"
+    name="title"
+    id="title"
+  />
+  <br />
+
+  <label for="content">Post:</label>
+  <textarea
+    class="form-control"
+    rows="3"
+    name="content"
+    id="content"
+    placeholder="{{post.content}}"
+  ></textarea>
+
+  <br />
+  Author:
+  <input
+    class="form-control"
+    type="text"
+    placeholder="{{post.author}}"
+    aria-label="Search"
+    name="author"
+    id="author"
+  />
+  <br />
+  <input type="submit" value="SAVE" class="btn btn-success" />
+</form>
+
+{% endblock%}
