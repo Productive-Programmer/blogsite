@@ -6,5 +6,5 @@ Blogging app using Django framework
 <h1>What I learned</h1>
 <ul>
 <li>Basics of Sql and Dartabases.</li>
-<li>Basics of Django and BootsStrap.<li>
+<li>Basics of Django and BootsStrap.</li>
 </ul>
